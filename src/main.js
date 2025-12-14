@@ -99,7 +99,7 @@ data.purchase_records.forEach(record => {
         seller.revenue += record.total_amount; 
 
         record.items.forEach(item => {
-            const product = productIndex[item.sku];
+            const product = productsIndex[item.sku];
             const cost = product.purchase_price * item.quantity;
             const revenue = calculateRevenue(item, product);
             const profit = revenue - cost;
