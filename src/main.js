@@ -149,7 +149,7 @@ function analyzeSalesData(data, options) {
         bonus: +seller.bonus.toFixed(2) // Число с двумя знаками после точки, бонус продавца
 })); ;
 }
-module.exports = {
+return {
     calculateSimpleRevenue,
     calculateBonusByProfit,
     analyzeSalesData
